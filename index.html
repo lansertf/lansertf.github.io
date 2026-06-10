@@ -5,28 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>이준호 | Portfolio</title>
     <style>
-        /* [CSS] 웹사이트 디자인 꾸미기 */
-        
-        /* 1. 전체 기본 설정 */
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #ffffff; /* 전체 배경: 흰색 */
-            color: #222222; /* 글자색: 진한 회색 */
+            background-color: #ffffff;
+            color: #222222;
         }
 
-        /* 2. 상단 메뉴바 고정 설정 */
         header {
-            background-color: #111111; /* 메뉴바: 검정색 */
+            background-color: #111111;
             padding: 20px 10%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            border-bottom: 3px solid #222222; /* 포인트 선: 짙은 회색 */
-            
-            /* 상단 고정 */
+            border-bottom: 3px solid #222222;
             position: fixed;
             top: 0;
             left: 0;
@@ -37,11 +31,11 @@
         header .logo {
             font-size: 24px;
             font-weight: bold;
-            color: #ffffff; /* 로고: 흰색 */
+            color: #ffffff;
         }
 
         header nav a {
-            color: #aaaaaa; /* 기본 메뉴 글자: 연한 회색 */
+            color: #aaaaaa;
             text-decoration: none;
             margin-left: 20px;
             font-weight: 500;
@@ -49,10 +43,9 @@
         }
 
         header nav a:hover {
-            color: #ffffff; /* 마우스 올리면 흰색 */
+            color: #ffffff;
         }
 
-        /* 3. 메인 소개 섹션 */
         .hero {
             padding: 160px 10% 100px 10%;
             text-align: center;
@@ -80,7 +73,6 @@
             margin-bottom: 30px;
         }
 
-        /* 강조 버튼 스타일 */
         .btn {
             display: inline-block;
             background-color: #111111; 
@@ -98,7 +90,6 @@
             transform: scale(1.05);
         }
 
-        /* 4. 본문 공통 섹션 스타일 */
         .container {
             padding: 80px 10%;
             scroll-margin-top: 80px; 
@@ -107,20 +98,19 @@
         .section-title {
             font-size: 28px;
             color: #111111;
-            border-left: 5px solid #111111; /* 왼쪽 세로선: 검정색 */
+            border-left: 5px solid #111111;
             padding-left: 15px;
             margin-bottom: 40px;
             font-weight: bold;
         }
 
-        /* 5. 자기 소개 카드 스타일 */
         .about-card {
             background-color: #ffffff;
             padding: 40px;
             border-radius: 12px;
             border: 1px solid #e9ecef;
             box-shadow: 0 5px 20px rgba(0, 0, 0, 0.03);
-            margin-bottom: 25px; /* 박스 간격 설정을 위해 추가 */
+            margin-bottom: 25px;
         }
 
         .about-card h3 {
@@ -140,7 +130,6 @@
             margin-bottom: 0;
         }
 
-        /* 6. 세로형 타임라인(Experience) 스타일 구조 */
         .timeline {
             position: relative;
             padding-left: 30px;
@@ -176,7 +165,6 @@
             transition: 0.3s;
         }
 
-        /* 활성화 상태의 타임라인 노드 색상 */
         .timeline-item.active::before {
             border-color: #111111; 
             background-color: #111111; 
@@ -209,7 +197,6 @@
             max-width: 800px;
         }
 
-        /* 7. 프로젝트 리스트 배치 (그리드 레이아웃) */
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -243,7 +230,6 @@
             line-height: 1.6;
         }
 
-        /* 8. 하단 정보 */
         footer {
             text-align: center;
             padding: 40px;
@@ -252,7 +238,6 @@
             font-size: 14px;
         }
 
-        /* 스크롤 애니메이션 */
         html {
             scroll-behavior: smooth;
         }
@@ -260,7 +245,6 @@
 </head>
 <body id="top">
 
-    <!-- 상단 영역 -->
     <header>
         <div class="logo">MyPortfolio.</div>
         <nav>
@@ -271,7 +255,6 @@
         </nav>
     </header>
 
-    <!-- 메인 타이틀 영역 -->
     <section class="hero">
         <h1>WELCOME TO MY PORTFOLIO</h1>
         <h2 class="my-name">이준호</h2> 
@@ -279,11 +262,9 @@
         <a href="#projects" class="btn">프로젝트 보기</a>
     </section>
 
-    <!-- 자기 소개 섹션 -->
     <section id="about" class="container">
         <h2 class="section-title">About Me</h2>
         
-        <!-- 첫 번째 박스: 기본 인적 사항 및 학업 트랙 -->
         <div class="about-card">
             <h3>👤 Profile</h3>
             <p><strong>안녕하세요, 컴퓨터공학을 향해 나아가는 이준호입니다!</strong></p>
@@ -291,7 +272,6 @@
             <p>프로그래밍을 하며 문제의 근본적인 원인을 분석하고, 이를 효율적인 코드로 해결해 나가는 과정에서 가장 큰 보람을 느낍니다.</p>
         </div>
 
-        <!-- 두 번째 박스: 관심 분야 및 개발 비전 (새롭게 추가된 영역!) -->
         <div class="about-card">
             <h3>🎯 My Interests & Vision</h3>
             <p>저는 단순히 코드를 타이핑하는 것을 넘어, **새로운 코딩 기술을 깊이 있게 학습하고 이를 실무나 개인 프로젝트에 직접 활용하여 무언가를 만들어내는 과정**에 깊은 관심을 가지고 있습니다.</p>
@@ -299,12 +279,10 @@
         </div>
     </section>
 
-    <!-- 경험 섹션 -->
     <section id="experience" class="container">
         <h2 class="section-title">Experience</h2>
         <div class="timeline">
             
-            <!-- 항목 1: 자유전공학과 입학 -->
             <div class="timeline-item">
                 <h3 class="timeline-title">자유전공학과 입학</h3>
                 <p class="timeline-subtitle">동양미래대학교</p>
@@ -312,7 +290,6 @@
                 <p class="timeline-content">동양미래대학교 자유전공학과에 입학하여 다양한 학문적 가능성을 탐색하고, 저의 진정한 흥미와 적성이 '컴퓨터 소프트웨어' 분야에 있음을 발견하는 첫 발을 내딛었습니다.</p>
             </div>
 
-            <!-- 항목 2: 수업 진행 -->
             <div class="timeline-item active">
                 <h3 class="timeline-title">컴퓨터 소프트웨어 공학과 수업 신청 및 진행</h3>
                 <p class="timeline-subtitle">동양미래대학교 (전공 탐색 및 수강)</p>
@@ -320,7 +297,6 @@
                 <p class="timeline-content">개발자로서의 꿈을 구체화하기 위해 컴퓨터 소프트웨어 공학과의 전공 수업들을 주도적으로 신청하여 수강하고 있습니다. 이론과 실습을 병행하며 컴퓨터 구조, 논리 회로 등 탄탄한 기초 역량을 다지는 중입니다.</p>
             </div>
             
-            <!-- 항목 3: 학과 신청 -->
             <div class="timeline-item">
                 <h3 class="timeline-title">컴퓨터 소프트웨어 공학과 신청</h3>
                 <p class="timeline-subtitle">동양미래대학교</p>
@@ -331,18 +307,15 @@
         </div>
     </section>
 
-    <!-- 프로젝트 섹션 -->
     <section id="projects" class="container">
         <h2 class="section-title">Projects</h2>
         <div class="grid">
-            <!-- 첫 번째 박스: Git Bash 실습 과제 -->
             <div class="card">
                 <h3>🛠️ Git & GitHub Workflow Practice</h3>
                 <p><strong>Git Bash를 활용한 버전 관리 실습 과제입니다.</strong></p>
                 <p>CLI 환경에서 로컬 저장소를 초기화하고 브랜치를 생성·전환하며 소스코드의 버전 분기 관리를 실습했습니다. 충돌(Conflict) 상황을 직접 해결하고, 원격 저장소(GitHub)와의 동기화 및 협업 워크플로우를 익혔습니다.</p>
             </div>
             
-            <!-- 두 번째 박스: 디스코드 봇 -->
             <div class="card">
                 <h3>💬 Gemini Discord Bot</h3>
                 <p><strong>OpenAI/Gemini API 연동 디스코드 봇 개발 프로젝트입니다.</strong></p>
@@ -351,7 +324,6 @@
         </div>
     </section>
 
-    <!-- 하단 영역 -->
     <footer>
         <p>© 2026 이준호. All rights reserved.</p>
     </footer>
